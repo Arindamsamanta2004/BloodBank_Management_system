@@ -1,0 +1,9 @@
+step-wise process of installing the application.
+
+pip install virtualenv --user
+python -m venv my_env
+python -m pip install -r requirements.txt
+pip install setuptools
+py manage.py makemigrations
+py manage.py migrate
+py manage.py runserver

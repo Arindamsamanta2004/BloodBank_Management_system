@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+    }
+
+    .loading svg polyline {
+      fill: none;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .loading svg polyline#back {
+      fill: none;
+      stroke: #ff4d5033;
+    }
+
+    .loading svg polyline#front {
+      fill: none;
+      stroke: #ff4d4f;
+      stroke-dasharray: 48, 144;
+      stroke-dashoffset: 192;
+      animation: dash_682 1.4s linear infinite;
+    }
+
+    @keyframes dash_682 {
+      72.5% {
+        opacity: 0;
+      }
+
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="bs-example">
+    <nav style="background-color: #FF0018;" class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a href="/" class="navbar-brand">
+        <i class="fas fa-heartbeat"></i>&nbsp; Blood Bank Management
+        <div class="loading">
+          <svg width="64px" height="48px">
+            <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+            <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+          </svg>
+        </div>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="/"><i class="fas fa-home"></i>&nbsp; Home</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="/patient/patientlogin"><i class="fas fa-procedures"></i>&nbsp; Patient</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="/donor/donorlogin"><i class="fas fa-user"></i>&nbsp; Donor</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="/adminlogin"><i class="fas fa-user-shield"></i>&nbsp; Admin</i></a>
+                </li>
+                
+            </ul>
+        </div>
+
+
+
+
+      </div>
+    </nav>
+  </div>
+
+<!--
+developed By : sumit kumar
+facebook : fb.com/sumit.luv
+youtube : youtube.com/lazycoders
+-->
+</body>
+
+</html>
